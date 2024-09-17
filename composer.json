@@ -1,0 +1,81 @@
+{
+    "name": "lara-zeus/hades",
+    "description": "Hades let users to save forms as a draft",
+    "keywords": [
+        "laravel",
+        "lara-zeus",
+        "hades",
+        "draft",
+        "form"
+    ],
+    "homepage": "https://larazeus.com/hades",
+    "support": {
+        "issues": "https://github.com/lara-zeus/hades/issues",
+        "source": "https://github.com/lara-zeus/hades"
+    },
+    "license": "MIT",
+    "type": "library",
+    "authors": [
+        {
+            "name": "Lara Zeus (Ash)",
+            "email": "info@larazeus.com"
+        }
+    ],
+    "require": {
+        "php": "^8.1",
+        "lara-zeus/filament-plugin-tools": "^1.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^10.1",
+        "nunomaduro/collision": "^7.0",
+        "pestphp/pest-plugin-livewire": "2.x-dev",
+        "phpstan/phpstan-deprecation-rules": "^1.0",
+        "phpstan/phpstan-phpunit": "^1.0",
+        "laravel/pint": "^1.0",
+        "larastan/larastan": "^2.2",
+        "orchestra/testbench": "^8.0",
+        "pestphp/pest": "^2.0",
+        "pestphp/pest-plugin-laravel": "^2.0",
+        "phpstan/extension-installer": "^1.1",
+        "phpstan/phpstan": "^1.10"
+    },
+    "autoload": {
+        "psr-4": {
+            "LaraZeus\\Hades\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "LaraZeus\\Hades\\Tests\\": "tests"
+        }
+    },
+    "scripts": {
+        "pint": "vendor/bin/pint",
+        "test:pest": "vendor/bin/pest --parallel",
+        "test:phpstan": "vendor/bin/phpstan analyse",
+        "test": [
+            "@test:pest",
+            "@test:phpstan"
+        ]
+    },
+    "config": {
+        "sort-packages": true,
+        "allow-plugins": {
+            "pestphp/pest-plugin": true,
+            "phpstan/extension-installer": true,
+            "dealerdirect/phpcodesniffer-composer-installer": true
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "LaraZeus\\Hades\\HadesServiceProvider"
+            ],
+            "aliases": {
+                "Hades": "LaraZeus\\Hades\\Facades\\Hades"
+            }
+        }
+    },
+    "prefer-stable": true,
+    "minimum-stability": "stable"
+}
