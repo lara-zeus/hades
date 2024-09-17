@@ -23,4 +23,4 @@ This allows users to save their progress and return to complete the form at a la
 
 - [Docs](https://larazeus.com/hades)
 - [Demo](https://demo.larazeus.com/admin/bookmarks)
-- [Discord](#)
+- [Discord](https://discord.com/channels/883083792112300104/1285695811262480547)
