@@ -2,6 +2,15 @@
 
 All notable changes to `Hades` will be documented in this file
 
+## 3.0.0 - 2026-06-05
+
+### What's Changed
+
+* filament v5
+* chore: align docs structure and cleanup by @atmonshi in https://github.com/lara-zeus/hades/pull/2
+
+**Full Changelog**: https://github.com/lara-zeus/hades/compare/2.0.1...3.0.0
+
 ## 2.0.1 - 2025-10-24
 
 ### What's Changed
