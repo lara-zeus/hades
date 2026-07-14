@@ -14,6 +14,14 @@
 
 </p>
 
+## Versions
+
+| Plugin Version | Filament Version |
+| --- | --- |
+| `v1.x` | `v2.x` |
+| `v2.x` | `v3.x` |
+| `v3.x` | `v3.x` |
+
 ## Features
 
 - 🔥 Save long forms to local storage.
